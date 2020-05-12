@@ -14,5 +14,5 @@ services:
     image: dockerkomarina/udacity-restapi-feed
   frontend:
     build:
-      context: ../../udacity-frontend  
+      context: ../../udagram-frontend  
     image: dockerkomarina/udacity-frontend:local
