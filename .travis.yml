@@ -22,7 +22,7 @@ install:
 
 deploy:
   provider: script
-  script: bash ./udacity-c3-deployment/docker_push.sh
+  script: bash ./deployment/docker_deploy.sh
   skip_cleanup: true
   on:
     branch: master
