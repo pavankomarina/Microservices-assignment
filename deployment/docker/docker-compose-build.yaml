@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: dockerkomarina/reverseproxy 
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: dockerkomarina/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed  
+    image: dockerkomarina/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../../udacity-frontend  
+    image: dockerkomarina/udacity-frontend:local
