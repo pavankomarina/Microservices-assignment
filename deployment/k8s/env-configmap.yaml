@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: pavan-microservices-project-3
+  AWS_PROFILE: default
+  AWS_REGION: ap-south-1
+  JWT_TOKEN: hello
+  POSTGRES_DB: udagramrossdev
+  POSTGRES_HOST: udagramrossdev.cdviln5i46at.us-west-1.rds.amazonaws.com
+  URL: http://localhost:8100
+metadata:
+  name: env-config
